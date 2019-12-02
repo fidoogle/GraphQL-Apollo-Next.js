@@ -20,6 +20,7 @@ const Home = () => {
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <h2>Uplift Records (10)</h2>
       <table>
         <tr><td>Id</td><td>Name</td><td>Email</td><td>Gross Annual Income</td></tr>
         {data.uplifts.map(uplift => {
@@ -28,6 +29,19 @@ const Home = () => {
             <td>{uplift.Name}</td>
             <td>{uplift.email__c}</td>
             <td>{uplift.Gross_Annual_Income__c}</td>
+          </tr>;
+        })}
+      </table>
+
+<h2>Plants Records ({data.plants.length})</h2>
+      <table>
+        <tr><td>id</td><td>Common Name</td><td>Scientific Name</td><td>Description</td></tr>
+        {data.plants.map(plant => {
+          return <tr key={`plant__${plant.id}`}>
+            <td>{plant.id}</td>
+            <td>{plant.common_name}</td>
+            <td>{plant.scientific_name}</td>
+            <td>{plant.description}</td>
           </tr>;
         })}
       </table>
