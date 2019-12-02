@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { useQuery } from '@apollo/react-hooks';
+//import PLANTS_QUERY from '../graphql/plants.query';
 import UPLIFTS_QUERY from '../graphql/uplifts.query';
 
 const Home = () => {
