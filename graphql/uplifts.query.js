@@ -1,6 +1,6 @@
 import gql from 'graphql-tag';
 
-const JOBS_QUERY = gql`
+const UPLIFTS_QUERY = gql`
   query Uplifts {
     uplifts {
       Id
@@ -9,4 +9,4 @@ const JOBS_QUERY = gql`
   }
 `;
 
-export default JOBS_QUERY;
+export default UPLIFTS_QUERY;
