@@ -22,7 +22,7 @@ const Home = () => {
       </Head>
       <ul>
         {data.jobs.map(job => {
-          return <li key={`job__${job.id}`}>{job.title}</li>;
+          return <li key={`job__${job.Id}`}>{job.Name}</li>;
         })}
       </ul>
     </div>

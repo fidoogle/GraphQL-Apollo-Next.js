@@ -5,7 +5,7 @@ import { createHttpLink } from 'apollo-link-http';
 import fetch from 'isomorphic-unfetch';
 
 // Update the GraphQL endpoint to any instance of GraphQL that you like
-const GRAPHQL_URL = 'https://api.graphql.jobs/';
+const GRAPHQL_URL = 'https://mynewfidelfuncapp.azurewebsites.net/testGQLSalesforce?code=mJ5JJRpp1kNqXH1oH7LuN8cx6wKCP9TUCpL8LGX0Zj7bRAAvaJ9dnA==';
 
 const link = createHttpLink({
   fetch, // Switches between unfetch & node-fetch for client & server.
