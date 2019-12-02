@@ -20,11 +20,17 @@ const Home = () => {
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ul>
+      <table>
+        <tr><td>Id</td><td>Name</td><td>Email</td><td>Gross Annual Income</td></tr>
         {data.uplifts.map(uplift => {
-          return <li key={`uplift__${uplift.Id}`}>{uplift.Name}</li>;
+          return <tr key={`uplift__${uplift.Id}`}>
+            <td>{uplift.Id}</td>
+            <td>{uplift.Name}</td>
+            <td>{uplift.email__c}</td>
+            <td>{uplift.Gross_Annual_Income__c}</td>
+          </tr>;
         })}
-      </ul>
+      </table>
     </div>
   );
 };

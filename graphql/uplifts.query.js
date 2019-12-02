@@ -5,6 +5,8 @@ const UPLIFTS_QUERY = gql`
     uplifts {
       Id
       Name
+      email__c
+      Gross_Annual_Income__c
     }
   }
 `;
